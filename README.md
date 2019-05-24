@@ -1,3 +1,4 @@
-# You should try better!
+# And here it goes!
+### First step accomplished
 
-![](https://dbdzm869oupei.cloudfront.net/img/sticker/large/10659.jpg)
+![](https://memegenerator.net/img/instances/61338326/good-job.jpg)

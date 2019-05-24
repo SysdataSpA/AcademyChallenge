@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Sysdata__" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="ZJS-sq-OQq" id="nbe-jZ-brg"/>
+                <outlet property="textField" destination="LLv-1y-cSe" id="V1y-GC-jyx"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fG8-GY-xN9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" tag="159357" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZJS-sq-OQq">
+                    <rect key="frame" x="20" y="144" width="374" height="0.0"/>
+                    <subviews>
+                        <textField hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LLv-1y-cSe">
+                            <rect key="frame" x="-15.5" y="0.0" width="150" height="40"/>
+                            <color key="backgroundColor" red="0.1215686275" green="0.1176470588" blue="0.36862745099999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="7IR-bu-nyC"/>
+                                <constraint firstAttribute="height" constant="40" id="7K1-H3-p62"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7k4-18-iMH">
+                            <rect key="frame" x="0.0" y="0.0" width="119" height="44"/>
+                            <color key="backgroundColor" red="0.1215686275" green="0.1176470588" blue="0.36862745099999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="SVo-PH-7py"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="tintColor" red="0.1215686275" green="0.1176470588" blue="0.36862745099999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="PREMI QUI">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="N5z-2h-tTN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTemplate" translatesAutoresizingMaskIntoConstraints="NO" id="6QK-Tr-8LA">
+                    <rect key="frame" x="221.5" y="792" width="172.5" height="50"/>
+                    <color key="tintColor" red="0.12156862745098039" green="0.11764705882352941" blue="0.36862745098039218" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4uR-68-QYk"/>
+                        <constraint firstAttribute="width" secondItem="6QK-Tr-8LA" secondAttribute="height" multiplier="970:281" id="TP6-su-Gtu"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdu-az-THS">
+                    <rect key="frame" x="20" y="798" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="7fx-eI-WgJ"/>
+                        <constraint firstAttribute="height" constant="44" id="Ymd-sL-3Es"/>
+                    </constraints>
+                    <color key="tintColor" red="0.1215686275" green="0.1176470588" blue="0.36862745099999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    <connections>
+                        <action selector="infoButtonAction:" destination="-1" eventType="touchUpInside" id="DFX-D3-fnD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6QK-Tr-8LA" secondAttribute="bottom" constant="20" id="IZV-Lo-ll5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZJS-sq-OQq" secondAttribute="trailing" constant="20" id="KWp-tm-g26"/>
+                <constraint firstItem="ZJS-sq-OQq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Knt-vJ-fyF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6QK-Tr-8LA" secondAttribute="trailing" constant="20" id="M3F-5a-k6J"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sdu-az-THS" secondAttribute="bottom" constant="20" id="qFu-iq-aTf"/>
+                <constraint firstItem="ZJS-sq-OQq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="tAr-9O-cCG"/>
+                <constraint firstItem="sdu-az-THS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xUN-31-28h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoTemplate" width="172.5" height="50"/>
+    </resources>
+</document>
