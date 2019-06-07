@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Sysdata__" customModuleProvider="target">
             <connections>
+                <outlet property="infoButton" destination="sdu-az-THS" id="sWr-Yu-iFW"/>
                 <outlet property="stackView" destination="ZJS-sq-OQq" id="nbe-jZ-brg"/>
                 <outlet property="textField" destination="LLv-1y-cSe" id="V1y-GC-jyx"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fG8-GY-xN9"/>
@@ -54,7 +55,7 @@
                         </button>
                     </subviews>
                 </stackView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTemplate" translatesAutoresizingMaskIntoConstraints="NO" id="6QK-Tr-8LA">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="6QK-Tr-8LA">
                     <rect key="frame" x="221.5" y="792" width="172.5" height="50"/>
                     <color key="tintColor" red="0.12156862745098039" green="0.11764705882352941" blue="0.36862745098039218" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -88,6 +89,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logoTemplate" width="172.5" height="50"/>
+        <image name="logoBlue" width="172" height="50"/>
     </resources>
 </document>

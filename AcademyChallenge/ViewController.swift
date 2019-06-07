@@ -12,10 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var infoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped))
+        self.view.addGestureRecognizer(tapRecognizer)
     }
     
     // UI setup
@@ -51,6 +55,11 @@ class ViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
+    
+    @objc func backgroundTapped() {
+        self.view.endEditing(false)
+    }
+    
 }
 
 extension ViewController {
@@ -92,6 +101,7 @@ extension ViewController {
         }
         confettiView.startConfetti()
         textField.resignFirstResponder()
+        infoButton.isHidden = true
         
         stackView.arrangedSubviews.forEach {
             $0.removeFromSuperview()
